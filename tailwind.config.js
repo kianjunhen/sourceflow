@@ -6,6 +6,9 @@ module.exports = {
       fontSize: {
         base: "16px",
       },
+      fontFamily: {
+        sans: ['"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"],
+      },
       width: {
         inherit: "inherit",
       },
