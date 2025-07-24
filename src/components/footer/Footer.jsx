@@ -109,8 +109,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative inset-0 left-1/2 -translate-x-[50vw] z-[-1] [width:calc(100vw_-_8px)] py-16 bg-[#064EA4] text-white px-4 lg:px-24">
-      <div className="max-w-7xl mx-auto grid items-center md:grid-cols-4 md:items-start gap-4 lg:gap-[24px]">
+    <footer className="relative py-16  text-white">
+      <div className="absolute inset-0 left-1/2 -translate-x-[50vw] w-[calc(100vw-8px)] h-full bg-[#064EA4] -z-10"></div>
+
+      <div className="grid items-center md:grid-cols-4 md:items-start gap-4 lg:gap-[24px] mx-2 mr-4 lg:mx-0">
         <div className="hidden md:block">{logoSection()}</div>
 
         <div className="hidden md:contents">{usefulLinks()}</div>

@@ -26,7 +26,7 @@ const RecruitmentSearch = () => {
                 placeholder="E.g. networking"
                 className="flex-grow px-2 md:px-4 md:py-[12px] w-inherit text-[12px] md:text-base font-bold text-[#AAAAAA] py-2 shadow-sm rounded-l-full focus:outline-none"
               />
-              <button className="px-2 py-1 md:px-4 md:py-[12px] font-bold text-[12px] md:text-base bg-[#FCDF69] text-[#25210E] border border-gray-300 border-l-0 rounded-r-full">
+              <button className="px-2 py-1 md:px-4 md:py-[12px] w-[150px] font-bold text-[12px] md:text-base bg-[#FCDF69] text-[#25210E] border border-gray-300 border-l-0 rounded-r-full">
                 Search jobs
               </button>
             </div>

@@ -39,21 +39,23 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="my-5 flex justify-between items-center mx-2 lg:mx-0 gap-4">
-      <div className="flex flex-row items-center gap-1">
-        <div className="block md:hidden">
+    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+      <div className="my-5 flex justify-between items-center lg:mx-0 gap-4 max-w-screen-xl mx-auto px-4">
+        <div className="flex flex-row items-center gap-1">
+          <div className="block md:hidden">
+            <NavItem items={navItems} />
+          </div>
+          <img src={logo} alt="Logo" className="md:h-[44px] md:w-[244px]" />
+        </div>
+
+        <div className="hidden md:block">
           <NavItem items={navItems} />
         </div>
-        <img src={logo} alt="Logo" className="md:h-[44px] md:w-[244px]" />
-      </div>
 
-      <div className="hidden md:block">
-        <NavItem items={navItems} />
-      </div>
-
-      <div className="flex gap-1 md:gap-2">
-        <Button variant="warning">Upload CV</Button>
-        <Button variant="danger">Contact us</Button>
+        <div className="flex gap-1 md:gap-2">
+          <Button variant="warning">Upload CV</Button>
+          <Button variant="danger">Contact us</Button>
+        </div>
       </div>
     </div>
   );
